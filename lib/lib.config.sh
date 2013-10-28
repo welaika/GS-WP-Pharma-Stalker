@@ -3,8 +3,8 @@
 # Out of function because bash 4.1.? seems to loss
 # -g declare's flag to globalize arrays from inside
 # functions
-declare -Ag db
-declare -ag notification_list
+declare -A db
+declare -a notification_list
 
 function do_config() {
 	#
