@@ -19,7 +19,7 @@ function do_config() {
 	# Wordpress locations and files
 	#
 	# Also a static absolute path should work
-	domains_dir="~/domains/html"
+	domains_dir="$HOME/domains"
 	config='wp-config.php'
 	#
 	# Mail config
