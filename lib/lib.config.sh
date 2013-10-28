@@ -26,5 +26,5 @@ function do_config() {
 	#
 	MAIL_FROM="gspharmastalker@$(hostname)"
 
-	notification_list=("hosting@welaika.com")
+	notification_list=("foo@example.com")
 }
