@@ -2,7 +2,7 @@
 
 cwd=$( cd $( dirname $0 ) && pwd )
 
-for lib in `ls lib/*.sh`; do
+for lib in `ls $cwd/lib/*.sh`; do
 	source $lib
 done
 
