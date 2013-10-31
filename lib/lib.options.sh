@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function manage_arguments(){
+function manage_arguments{
 	if [[ $# -eq 0 ]]; then
 		error 'Please, fill in at least on option'
 		usage

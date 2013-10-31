@@ -6,7 +6,7 @@
 declare -A db
 declare -a notification_list
 
-function do_config() {
+function do_config {
 	#
 	# DB config
 	#

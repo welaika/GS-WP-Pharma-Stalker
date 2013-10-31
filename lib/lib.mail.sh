@@ -3,7 +3,7 @@
 # Send mail as per configuration.
 # ARGS:
 # $1: the mail text (str)
-function send_mail() {
+function send_mail {
 	local report=$1
 
 	[[ $report ]] || return 1
