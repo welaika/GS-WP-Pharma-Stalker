@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function enter_site {
-	cd $site_root
+	[[ -L $site_root ]] && return 1 || cd $site_root
 }
 
 function set_site_root {

@@ -15,7 +15,7 @@ for site in `ls $domains_dir`; do
 	[[ -d ${domains_dir}/${site} ]] || continue;
 
 	set_site_root $site
-	enter_site
+	enter_site || continue;
 
 	is_wordpress_site || continue;
 
