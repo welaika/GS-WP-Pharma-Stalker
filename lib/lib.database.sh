@@ -4,7 +4,7 @@ function search_db {
 	local database=$1
 	local prefix=$2
 
-	mysql_invoke $database "SELECT n, v FROM (SELECT option_name as n, option_value as v FROM wp_options) AS opt WHERE ( n LIKE 'rss_%' OR n LIKE '%doorgen%' ) AND ( v LIKE '%base%' OR v LIKE '%esab%' OR v LIKE '%==%' OR v REGEXP '[0-9a-zA-Z\+]{100,}') \G"
+	mysql_invoke $database "SELECT n, v FROM (SELECT option_name as n, option_value as v FROM ${prefix}wp_options) AS opt WHERE ( n LIKE 'rss_%' OR n LIKE '%doorgen%' ) AND ( v LIKE '%base%' OR v LIKE '%esab%' OR v LIKE '%==%' OR v REGEXP '[0-9a-zA-Z\+]{100,}') \G"
 }
 
 function mysql_invoke {
