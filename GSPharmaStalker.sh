@@ -22,7 +22,7 @@ for site in `ls $domains_dir`; do
 	prefix=$( get_table_prefix )
 	database=$( get_table_name )
 
-	results=$( search_db $database $prefix | grep option_name | split_lines )
+	results=$( search_db $database $prefix | split_lines )
 
 	[[ $verbose ]] && print_results $site "$results"
 
