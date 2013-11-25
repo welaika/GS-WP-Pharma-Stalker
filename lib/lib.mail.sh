@@ -9,6 +9,6 @@ function send_mail {
 	[[ $report ]] || return 1
 
 	for mail in $notification_list; do
-		cat $cwd/template.html | sed "s|#!REPLACEME!#|$report|" | mail -a 'Content-Type: text/html' -a "From: $MAIL_FROM" -s "GSPharmaSTalker Report" $mail
+		cat $cwd/template.html | sed "s|#!REPLACEME!#|$report|" | mail -a 'Content-Type: text/html' -a "From: $MAIL_FROM" -s "GSwpDBSTalker Report" $mail
 	done
 }
